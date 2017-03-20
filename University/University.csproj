@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EB1A69F-E679-470D-9CC4-5489718DC1EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>University</RootNamespace>
+    <AssemblyName>University</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Finance.cs" />
+    <Compile Include="F_Add_Courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Add_Courses.Designer.cs">
+      <DependentUpon>F_Add_Courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Cancel_Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Cancel_Mail.Designer.cs">
+      <DependentUpon>F_Cancel_Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Change_Password.Designer.cs">
+      <DependentUpon>F_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Edit_Admission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Edit_Admission.Designer.cs">
+      <DependentUpon>F_Edit_Admission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Edit_Person_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Edit_Person_Info.Designer.cs">
+      <DependentUpon>F_Edit_Person_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Edit_Student_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Edit_Student_Info.Designer.cs">
+      <DependentUpon>F_Edit_Student_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Grade_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Grade_Students.Designer.cs">
+      <DependentUpon>F_Grade_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Head_Department_Degree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Head_Department_Degree.Designer.cs">
+      <DependentUpon>F_Head_Department_Degree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Head_Department_Graduates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Head_Department_Graduates.Designer.cs">
+      <DependentUpon>F_Head_Department_Graduates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Head_Department_Suspension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Head_Department_Suspension.Designer.cs">
+      <DependentUpon>F_Head_Department_Suspension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Lecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Lecturer.Designer.cs">
+      <DependentUpon>F_Lecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Library.Designer.cs">
+      <DependentUpon>F_Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Password_Recovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Password_Recovery.Designer.cs">
+      <DependentUpon>F_Password_Recovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Register.Designer.cs">
+      <DependentUpon>F_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Secretary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Secretary.Designer.cs">
+      <DependentUpon>F_Secretary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Student.Designer.cs">
+      <DependentUpon>F_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Edit_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Edit_Info.Designer.cs">
+      <DependentUpon>F_Edit_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Student_Courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Student_Courses.Designer.cs">
+      <DependentUpon>F_Student_Courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Student_Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Student_Grades.Designer.cs">
+      <DependentUpon>F_Student_Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Tutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Tutor.Designer.cs">
+      <DependentUpon>F_Tutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_View_Reception_Hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_View_Reception_Hours.Designer.cs">
+      <DependentUpon>F_View_Reception_Hours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadDept.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login.Designer.cs">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Head_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Head_Department.Designer.cs">
+      <DependentUpon>F_Head_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Head_Department_Edit_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Head_Department_Edit_Course.Designer.cs">
+      <DependentUpon>F_Head_Department_Edit_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Edit_Reception_Hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Edit_Reception_Hours.Designer.cs">
+      <DependentUpon>F_Edit_Reception_Hours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Secretary.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Tutor.cs" />
+    <EmbeddedResource Include="F_Add_Courses.resx">
+      <DependentUpon>F_Add_Courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Cancel_Mail.resx">
+      <DependentUpon>F_Cancel_Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Change_Password.resx">
+      <DependentUpon>F_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Edit_Admission.resx">
+      <DependentUpon>F_Edit_Admission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Edit_Person_Info.resx">
+      <DependentUpon>F_Edit_Person_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Edit_Student_Info.resx">
+      <DependentUpon>F_Edit_Student_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Grade_Students.resx">
+      <DependentUpon>F_Grade_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Head_Department_Degree.resx">
+      <DependentUpon>F_Head_Department_Degree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Head_Department_Graduates.resx">
+      <DependentUpon>F_Head_Department_Graduates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Head_Department_Suspension.resx">
+      <DependentUpon>F_Head_Department_Suspension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Lecturer.resx">
+      <DependentUpon>F_Lecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Library.resx">
+      <DependentUpon>F_Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login.resx">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Password_Recovery.resx">
+      <DependentUpon>F_Password_Recovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Register.resx">
+      <DependentUpon>F_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Secretary.resx">
+      <DependentUpon>F_Secretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Student.resx">
+      <DependentUpon>F_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Edit_Info.resx">
+      <DependentUpon>F_Edit_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Head_Department.resx">
+      <DependentUpon>F_Head_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Head_Department_Edit_Course.resx">
+      <DependentUpon>F_Head_Department_Edit_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Edit_Reception_Hours.resx">
+      <DependentUpon>F_Edit_Reception_Hours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Student_Courses.resx">
+      <DependentUpon>F_Student_Courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Student_Grades.resx">
+      <DependentUpon>F_Student_Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Tutor.resx">
+      <DependentUpon>F_Tutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_View_Reception_Hours.resx">
+      <DependentUpon>F_View_Reception_Hours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher-male-48.png" />
+    <None Include="Resources\teacher.png" />
+    <None Include="Resources\Test-paper-48.png" />
+    <None Include="Resources\1430426618_document_pencil.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\back1.png" />
+    <None Include="Resources\back2.png" />
+    <None Include="Resources\back %282%29.png" />
+    <None Include="Resources\delete-icon.png" />
+    <None Include="Resources\companysec1.png" />
+    <None Include="Resources\edit-icon.png" />
+    <None Include="Resources\edit-student.png" />
+    <None Include="Resources\contact-new.png" />
+    <None Include="Resources\add_course.png" />
+    <None Include="Resources\file_edit.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\678075-sign-ban-48.png" />
+    <None Include="Resources\Certificate-48.png" />
+    <None Include="Resources\grads.png" />
+    <None Include="Resources\Graduate-male-48.png" />
+    <None Include="Resources\blackboards_college_students_a_2560x1440_knowledgehi.com.jpg" />
+    <None Include="Resources\2014-06-Office-Space-Manchester-Image-09.jpg" />
+    <None Include="Resources\albert-einstein-physics-chalk-board-math-wallpapers-hd-black-hd-wallpaper-math-android-for-walls-home-border-iphone-5-background-pattern-with-glitter.jpg" />
+    <None Include="Resources\executive-office-interior-interior-design-magazine-office-interior-interior-design-43957.jpg" />
+    <None Include="Resources\1234.jpg" />
+    <None Include="Resources\bw_teacher_pupil_blackboard.jpg" />
+    <Content Include="Resources\IconApp.ico" />
+    <None Include="Resources\Log Out.png" />
+    <Content Include="Resources\Login.png" />
+    <Content Include="Resources\Login_Button.png" />
+    <None Include="Resources\mail send.png" />
+    <None Include="Resources\mail send2.png" />
+    <None Include="Resources\Ok-icon2.png" />
+    <None Include="Resources\Mailbig.png" />
+    <None Include="Resources\password change.png" />
+    <None Include="Resources\preferences-system-time.png" />
+    <None Include="Resources\mycourse.png" />
+    <None Include="Resources\office_interior_desktop_1920x1200_hd-wallpaper-1188766.jpg" />
+    <None Include="Resources\maxresdefault.jpg" />
+    <None Include="Resources\physics_mathematics_lecture_chalk_chalkboards_1920x1200_wallpaper_Wallpaper HD_1920x1200_www.paperhi.com.jpg" />
+    <None Include="Resources\old_chem_teacher_timey_time_again_file_desktop_2560x1600_hd-wallpaper-579700.jpg" />
+    <Content Include="Resources\Student.jpg" />
+    <None Include="Resources\membership-icon.png" />
+    <Content Include="Resources\Register_Button.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
