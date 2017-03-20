@@ -1,1 +1,2 @@
-Run University.exe file to see the project
+# University Project
+Run University.exe file to start the project
