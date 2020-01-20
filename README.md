@@ -12,12 +12,12 @@ Run <a id="raw-url" href="https://raw.githubusercontent.com/dimakol/University-P
 ![image](/screenshots/Tutor/Menu.png?raw=true "Tutor")
 
 **Lecturer Screen** <br />
-![image](/screenshots/Lecturer/Menu.png?raw=true "Lecturer")
+![image](/screenshots/Lecturer/Menu.PNG?raw=true "Lecturer")
 
 **Secretary Screen** <br />
-![image](/screenshots/Secretary/Menu.png?raw=true "Secretary")
+![image](/screenshots/Secretary/Menu.PNG?raw=true "Secretary")
 
 **Head Department Screen** <br />
-![image](/screenshots/Head_Department/Menu.png?raw=true "Head Department")
+![image](/screenshots/Head_Department/Menu.PNG?raw=true "Head Department")
 
 
