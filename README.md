@@ -1,4 +1,4 @@
-# University Project
+# University Project :mortar_board:
 This is a C# desktop application for universities. <br />
 The project includes UML diagrams. <br />
 Run <a id="raw-url" href="https://raw.githubusercontent.com/dimakol/University-Project/master/University.exe">University.exe</a> file to start the application.
